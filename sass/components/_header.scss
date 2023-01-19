@@ -1,0 +1,89 @@
+@use "../utils/colors" as colors;
+@use "../utils/config" as padding;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+    padding: 32px padding.$padding-main-header;
+    gap: 20px;
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 97px;
+        .logo {
+            display: block;
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 31px;
+            color: colors.$hoverColor;
+        }
+        ul {
+            li {
+                position: relative;
+            }
+        }
+    }
+    .nav-contact {
+        li {
+            .links-contact {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                color: colors.$grayColor;
+                fill: colors.$grayColor;
+            }
+        }
+    }
+    .links {
+        li {
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+        }
+    }
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav-main,
+.nav-contact {
+    padding-inline-start: 0;
+    gap: 50px;
+}
+.nav-main {
+    &__line:hover::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -36px;
+        right: 0;
+        width: 100%;
+        height: 5px;
+        border-radius: 2.5px;
+        background-color: colors.$hoverColor;
+    }
+}
+
+header .nav-contact li .links-contact:focus,
+header .nav-contact li .links-contact:hover,
+header nav .nav-main li:hover a,
+header nav .nav-main li:focus a,
+header .nav-contact li .links-contact:hover .links-contact__icon {
+    color: colors.$hoverColor;
+    fill: colors.$hoverColor;
+}
+.logo {
+    display: block;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: colors.$hoverColor;
+}

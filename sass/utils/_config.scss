@@ -1,0 +1,54 @@
+@use "../utils/colors" as colors;
+
+
+$padding-main-header: calc((100% - 1200px)/2);
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: colors.$bodyColor;
+    background-color: colors.$backgroundColor;
+    position: relative;
+}
+a {
+    color: colors.$bodyColor;
+    text-decoration: none;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+address {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    a {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+.container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section {
+    padding: 94px 0;
+}
+

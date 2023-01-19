@@ -1,0 +1,31 @@
+@use "../utils/colors" as colors;
+
+.content-customers {
+    .ct__customers__logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 170px;
+            height: 81px;
+            border: 1px solid #AFB1B8;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .customer__logo {
+            fill: #AFB1B8;
+        }
+        li:hover {
+            border: 1px solid colors.$hoverColor;
+        }
+        li:hover .customer__logo {
+            fill: colors.$hoverColor;
+        }
+    }
+}

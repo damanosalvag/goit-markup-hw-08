@@ -1,0 +1,39 @@
+@use "../utils/colors" as colors;
+
+.main-features {
+    .features {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 30px;
+        li {
+            width: 270px;
+            h5 {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+                color: colors.$grayColor;
+            }
+        }
+        .features__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: colors.$backgroundColorStaff;
+            border-radius: 4px;
+            height: 120px;
+            width: 270px;
+            margin-bottom: 30px;
+        }
+    }
+}

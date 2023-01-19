@@ -1,0 +1,37 @@
+@use "../utils/colors" as colors;
+@use "../utils/config" as padding;
+
+.main-header {
+    position: relative;
+    padding: 200px padding.$padding-main-header;
+    text-align: center;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg-image.jpg);
+    max-width: 1600px;
+    background-color: #2F303A;
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    
+        background: rgba(47, 48, 58, 0.4);
+        height: 100.8%;
+        width: 100%;
+    }
+    h1 {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 700px;
+        margin: 20px auto;
+        position: relative;
+        z-index: 1;
+    }
+
+}

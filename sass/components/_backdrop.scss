@@ -1,0 +1,115 @@
+@use "../utils/colors" as colors;
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__modal {
+        position: relative;
+        width: 95%;
+        max-width: 528px;
+        height: 581px;
+    
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        .bm__close-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        form {
+            padding: 0px 40px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+            ul {
+                li {
+                    label {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 10px;
+                        gap: 4px;
+                        color: colors.$grayColor;
+                        input {
+                            border: 1px solid rgba(33, 33, 33, 0.2);
+                            border-radius: 4px;
+                            height: 40px;
+                            padding: 0px 38px;
+                        }
+                        textarea {
+                            border: 1px solid rgba(33, 33, 33, 0.2);
+                            border-radius: 4px;
+                            height: 120px;
+                            padding: 12px 16px;
+                            resize: none;
+                        }
+                        textarea::placeholder {
+                            color: rgba(117, 117, 117, 0.5);
+                        }
+                        .form__icon {
+                            position: absolute;
+                            top: 55%;
+                            left: 14px;
+                            fill: colors.$bodyColor;
+                        }
+                        .form__input:focus, .form__input:hover {
+                            border: 3px solid colors.$hoverColor;
+                        }
+                        .form__input:hover+.form__icon,
+                        .form__input:focus +.form__icon {
+                            fill: colors.$hoverColor;
+                        }
+                    }
+                    .user__checkBulletin__modal {
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 9px;
+                        margin: 20px 12px 20px 12px;
+                    
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: 0.03em;
+                        input {
+                            width: 16px;
+                            height: 15px;
+                            margin-top: 4px;
+                        }
+                    }
+                    .btn-form {
+                        padding: 10px 75px;
+                    }
+                }
+                .btn-form-container {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &__modalTitle {
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin: 40px 40px 14px 40px;
+    }
+
+}
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}

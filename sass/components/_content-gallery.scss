@@ -1,0 +1,32 @@
+@use "../utils/colors" as colors;
+
+.content-gallery {
+    .cg-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            li {
+                position: relative;
+                display: flex;
+                text-align: center;
+                .cg-items-cover {
+                    position: absolute;
+                    opacity: 0.8;
+                    background:colors.$backgroundColorStaff-2;
+                    width: 370px;
+                    height: 70px;
+                    bottom: 0px;
+                    right: 0px;
+                    padding: 28px 0px;
+                
+                    color: colors.$backgroundColor;
+                    font-weight: 700;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                }
+            }
+        }
+}

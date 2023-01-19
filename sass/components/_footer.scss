@@ -1,0 +1,108 @@
+@use "../utils/colors" as colors;
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 47px;
+    background-color: colors.$backgroundColorStaff-2;
+}
+
+.sc-one-footer {
+    display: flex;
+    flex-wrap: wrap;
+    div:not(:last-child) {
+        margin-right: 70px;
+    }
+    .social-nets {
+        margin-top: 14px;
+        p {
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: colors.$backgroundColor;
+            margin-left: 3px;
+        }
+    }
+    .social__nets__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline-start: 0px;
+        margin-block-start: 20px;
+        gap: 10px;
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            a {
+                width: 20px;
+                height: 20px;
+            }
+            &:hover,
+            &:focus,
+            &:hover .sni__sMedia {
+                background: colors.$hoverColor;
+            }
+        }
+
+        .sni__sMedia {
+            fill: colors.$backgroundColor;
+        }
+    }
+    .footer__subs {
+        margin-top: 14px;
+        p {
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: colors.$backgroundColor;
+            margin-left: 3px;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+            input {
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+                border-radius: 4px;
+                width: 358px;
+                background: none;
+                padding-left: 16px;
+            
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: rgba(255, 255, 255, 0.6);
+                &::placeholder {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.03em;
+                
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+            button {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+}
+.lg-foot {
+    padding-bottom: 14px;
+
+}
