@@ -35,3 +35,13 @@
     }
 
 }
+
+@media screen and (max-width: 1023.8px) {
+    .main-header {
+        h1 {
+            font-size: 26px;
+            line-height: 42px;
+            max-width: 315px;
+        }
+    }
+}

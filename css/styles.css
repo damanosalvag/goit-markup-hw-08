@@ -39,6 +39,7 @@ address {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+  min-width: 196px;
 }
 address a {
   color: rgba(255, 255, 255, 0.6);
@@ -233,12 +234,16 @@ button {
   position: relative;
   display: flex;
   text-align: center;
+  max-width: 370px;
+}
+.content-gallery .cg-items li img {
+  width: 100%;
 }
 .content-gallery .cg-items li .cg-items-cover {
   position: absolute;
   opacity: 0.8;
   background: #2F303A;
-  width: 370px;
+  width: 100%;
   height: 70px;
   bottom: 0px;
   right: 0px;
@@ -317,7 +322,8 @@ footer {
 
 .sc-one-footer {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 30px;
 }
 .sc-one-footer div:not(:last-child) {
   margin-right: 70px;
@@ -373,7 +379,6 @@ footer {
 }
 .sc-one-footer .footer__subs form {
   display: flex;
-  flex-wrap: wrap;
   gap: 12px;
   margin-top: 20px;
 }
@@ -382,6 +387,7 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   width: 358px;
+  height: 50px;
   background: none;
   padding-left: 16px;
   font-style: normal;
@@ -404,12 +410,33 @@ footer {
   display: flex;
   align-items: center;
   gap: 20px;
+  max-width: 200px;
 }
 
 .lg-foot {
   padding-bottom: 14px;
 }
 
+@media screen and (max-width: 1129.8px) {
+  .sc-one-footer {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  .sc-one-footer div {
+    text-align: center;
+  }
+  .sc-one-footer div:not(:last-child) {
+    margin-right: 0;
+  }
+  .sc-one-footer .footer__subs form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sc-one-footer .footer__subs form input {
+    width: 450px;
+  }
+}
 *,
 *::after,
 *::before {
@@ -451,6 +478,7 @@ address {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+  min-width: 196px;
 }
 
 address a {
@@ -688,6 +716,7 @@ address {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+  min-width: 196px;
 }
 
 address a {
@@ -737,6 +766,13 @@ address a {
   z-index: 1;
 }
 
+@media screen and (max-width: 1023.8px) {
+  .main-header h1 {
+    font-size: 26px;
+    line-height: 42px;
+    max-width: 315px;
+  }
+}
 .filters {
   padding: 0px 25%;
   padding-top: 100px;
