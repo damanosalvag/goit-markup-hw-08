@@ -2,16 +2,16 @@
 @use "../utils/config" as padding;
 
 header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
     border-bottom: 1px solid #ECECEC;
     padding: 32px padding.$padding-main-header;
-    gap: 20px;
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
     nav {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         gap: 97px;
         .logo {
@@ -30,6 +30,9 @@ header {
     }
     .nav-contact {
         li {
+            .menu-burguer {
+                display: none;
+            }
             .links-contact {
                 display: flex;
                 align-items: center;
@@ -86,4 +89,82 @@ header .nav-contact li .links-contact:hover .links-contact__icon {
     font-size: 26px;
     line-height: 31px;
     color: colors.$hoverColor;
+}
+
+@media screen and (min-width:660px) and (max-width:900px) {
+    
+    header {
+        padding: 26px 15px;
+        .links {
+            li {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+    .nav-contact {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 160px;
+    }
+    .nav {
+        align-items: flex-start;
+    }
+}
+@media screen and (min-width:321px) and (max-width:659.5px) {
+    header {
+        padding: 26px 15px;
+        nav {
+            .logo {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+        .nav-contact {
+            gap: 0;
+            li {
+                .menu-burguer {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center
+                }
+                .links-contact {
+                    display: none;
+                }
+            }
+        }
+        .nav-main {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:320.5px) {
+
+    header {
+        padding: 26px 15px;
+        nav {
+            .logo {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+        .nav-contact {
+            gap: 0;
+                li {
+                    .menu-burguer {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center
+                    }
+        
+                    .links-contact {
+                        display: none;
+                    }
+                }
+            }
+        .nav-main {
+            display: none;
+        }
+    }
+
 }

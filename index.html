@@ -11,38 +11,47 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a class="logo" href="/">WebStudio</a>
-            <ul class="nav-main links nav">
+        <div class="header-container">
+            <nav>
+                <a class="logo" href="/">WebStudio</a>
+                <ul class="nav-main links nav">
+                    <li>
+                        <a class="nav-main__line" href="./index.html">Estudio</a>
+                    </li>
+                    <li>
+                        <a class="nav-main__line" href="./portafolio.html">Portafolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-main__line" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="nav-contact links nav">
                 <li>
-                    <a class="nav-main__line" href="./index.html">Estudio</a>
+                    <a class="menu-burguer">
+                        <svg class="menu-burguer__icon" width="24" height="16">
+                            <use href="./images/svg/icons.svg#menu-burguer"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li>
-                    <a class="nav-main__line" href="./portafolio.html">Portafolio</a>
+                    <a class="links-contact" href="mailto:info@devstudio.com">
+                        <svg class="links-contact__icon envelope" width="16" height="12">
+                            <use href="./images/svg/icons.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
                 </li>
                 <li>
-                    <a class="nav-main__line" href="#">Contactos</a>
+                    <a class="links-contact" href="tel:+525555296000">
+                        <svg class="links-contact__icon sphone" width="10" height="16">
+                            <use href="./images/svg/icons.svg#smartphone"></use>
+                        </svg>
+                        +525555296000
+                    </a>
                 </li>
             </ul>
-        </nav>
-        <ul class="nav-contact links nav">
-            <li>
-                <a class="links-contact" href="mailto:info@devstudio.com">
-                    <svg class="links-contact__icon envelope" " width="16" height="12">
-                        <use href="./images/svg/icons.svg#envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-            </li>
-            <li>
-                <a class="links-contact" href="tel:+525555296000">
-                    <svg class="links-contact__icon sphone" width="10" height="16">
-                        <use href="./images/svg/icons.svg#smartphone"></use>
-                    </svg>
-                    +525555296000
-                </a>
-            </li>
-        </ul>
+        </div>
         <!--Lista de menu-->
     </header>
     <main>

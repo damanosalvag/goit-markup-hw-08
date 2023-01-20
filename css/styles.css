@@ -468,17 +468,16 @@ address a {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
   border-bottom: 1px solid #ECECEC;
   padding: 32px calc((100% - 1200px) / 2);
-  gap: 20px;
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 97px;
 }
@@ -492,6 +491,9 @@ header nav .logo {
 }
 header nav ul li {
   position: relative;
+}
+header .nav-contact li .menu-burguer {
+  display: none;
 }
 header .nav-contact li .links-contact {
   display: flex;
@@ -547,6 +549,69 @@ header .nav-contact li .links-contact:hover .links-contact__icon {
   color: #2196F3;
 }
 
+@media screen and (min-width: 660px) and (max-width: 900px) {
+  header {
+    padding: 26px 15px;
+  }
+  header .links li {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .nav-contact {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 160px;
+  }
+  .nav {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 659.5px) {
+  header {
+    padding: 26px 15px;
+  }
+  header nav .logo {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  header .nav-contact {
+    gap: 0;
+  }
+  header .nav-contact li .menu-burguer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header .nav-contact li .links-contact {
+    display: none;
+  }
+  header .nav-main {
+    display: none;
+  }
+}
+@media screen and (max-width: 320.5px) {
+  header {
+    padding: 26px 15px;
+  }
+  header nav .logo {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  header .nav-contact {
+    gap: 0;
+  }
+  header .nav-contact li .menu-burguer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header .nav-contact li .links-contact {
+    display: none;
+  }
+  header .nav-main {
+    display: none;
+  }
+}
 .main-features .features {
   display: flex;
   justify-content: space-evenly;
