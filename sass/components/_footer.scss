@@ -132,3 +132,14 @@ footer {
         }
     }
 }
+@media screen and (max-width: 455px) {
+    .sc-one-footer {
+        .footer__subs {
+            form {
+                input {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}

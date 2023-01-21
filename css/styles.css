@@ -256,6 +256,11 @@ button {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1020px) {
+  .content-gallery {
+    display: none;
+  }
+}
 .content-staff {
   background: #F5F4FA;
 }
@@ -435,6 +440,11 @@ footer {
   }
   .sc-one-footer .footer__subs form input {
     width: 450px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .sc-one-footer .footer__subs form input {
+    width: 300px;
   }
 }
 *,
@@ -766,7 +776,12 @@ address a {
   z-index: 1;
 }
 
-@media screen and (max-width: 1023.8px) {
+@media screen and (max-width: 780px) {
+  .main-header {
+    background-image: url(../../images/bg-image-2.jpg);
+    background-size: auto;
+    padding: 113px calc((100% - 1200px) / 2);
+  }
   .main-header h1 {
     font-size: 26px;
     line-height: 42px;
