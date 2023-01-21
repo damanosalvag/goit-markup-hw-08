@@ -225,6 +225,10 @@ button {
 }
 
 @media screen and (max-width: 1023.9px) {
+  .content-customers h2 {
+    font-size: 28px;
+    line-height: 33px;
+  }
   .content-customers .ct__customers__logo li {
     width: 226px;
   }
@@ -333,6 +337,20 @@ button {
   .content-staff .staff img {
     width: 270px;
     height: 260px;
+  }
+}
+@media screen and (max-width: 1023.9px) {
+  .content-staff h2 {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 449.8px) {
+  .content-staff .staff {
+    width: 100%;
+  }
+  .content-staff .staff img {
+    width: 100%;
   }
 }
 footer {
@@ -697,10 +715,23 @@ header .nav-contact li .links-contact:hover .links-contact__icon {
   background: #F5F4FA;
   border-radius: 4px;
   height: 120px;
-  width: 270px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1023.8px) {
+  .main-features .features li {
+    width: 354px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-features .features li {
+    width: 450px;
+  }
+  .main-features .features li h5 {
+    text-align: center;
+  }
+}
 *,
 *::after,
 *::before {

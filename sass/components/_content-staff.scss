@@ -75,3 +75,23 @@
         }
     }
 }
+@media screen and (max-width: 1023.9px) {
+    .content-staff {
+        h2 {
+            font-size: 28px;
+            line-height: 33px;
+        }
+    }
+}
+
+@media screen and (max-width:449.8px) {
+    .content-staff {
+            .staff {
+                width: 100%;
+                img {
+                    width: 100%;
+
+                }
+            }
+        }
+}
