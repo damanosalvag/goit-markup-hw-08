@@ -64,3 +64,14 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .content-staff {
+        .staff {
+            img {
+                width: 270px;
+                height: 260px;
+            }
+        }
+    }
+}
