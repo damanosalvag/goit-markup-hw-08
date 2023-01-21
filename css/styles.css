@@ -209,7 +209,7 @@ button {
   align-items: center;
   flex-wrap: wrap;
   width: 170px;
-  height: 81px;
+  height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   cursor: pointer;
@@ -224,6 +224,16 @@ button {
   fill: #2196F3;
 }
 
+@media screen and (max-width: 1023.9px) {
+  .content-customers .ct__customers__logo li {
+    width: 226px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .content-customers .ct__customers__logo li {
+    width: 210px;
+  }
+}
 .content-gallery .cg-items {
   display: flex;
   justify-content: center;
