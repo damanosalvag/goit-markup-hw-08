@@ -1,12 +1,17 @@
 @use "../utils/colors" as colors;
 
 .filters {
-    padding: 0px 25%;
     padding-top: 100px;
     padding-bottom: 50px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content:center;
     align-items: center;
+    li:nth-child(2) {
+        button {
+            min-width: 130px;
+        }
+    }
     li:not(:last-child) {
         margin-right: 10px;
     }
@@ -18,7 +23,6 @@
     gap: 30px;
     padding-bottom: 82px;
     .item {
-        width: 370px;
         border-bottom: 1px solid #EEEEEE;
 
         &:hover,&:focus {
@@ -42,6 +46,7 @@
         .ct-item__hidden {
             position: relative;
             overflow: hidden;
+            width: 100%;
             .ct-item__pop-up {
                 position: absolute;
                 top: 0;
@@ -65,5 +70,38 @@
     }
     .item:hover .ct-item__pop-up  {
         transform: translateY(0%);
+    }
+}
+@media screen and (min-width: 1199.8px) {
+    .content-item {
+        .item {
+            .ct-item__hidden {
+                img {
+                    width: 370px;
+                    height: 294px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:767.8px) {
+    .content-item {
+        .item {
+            width: auto;
+            .ct-item__hidden {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        figcaption {
+            text-align: center;
+        }
+    }
+    .filters {
+        padding-top: 60px;
+        padding-bottom: 40px;
     }
 }
