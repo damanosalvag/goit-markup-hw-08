@@ -641,7 +641,7 @@ header .menu-popUp .menu-modal__contact li:nth-child(1) a {
 header .menu-popUp .menu-modal__social-media {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 65px 0 47px 40px;
 }
 header .menu-popUp .menu-modal__social-media li {
