@@ -74,7 +74,7 @@ address a {
   position: relative;
   width: 95%;
   max-width: 528px;
-  height: 581px;
+  height: 609px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -540,6 +540,7 @@ address a {
 }
 
 header {
+  position: relative;
   border-bottom: 1px solid #ECECEC;
   padding: 32px calc((100% - 1200px) / 2);
 }
@@ -573,6 +574,91 @@ header .nav-contact li .links-contact {
   gap: 10px;
   color: #757575;
   fill: #757575;
+}
+header .menu-popUp {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  height: auto;
+  overflow-y: auto;
+}
+header .menu-popUp button {
+  position: fixed;
+  right: 10px;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu-popUp button svg {
+  fill: #212121;
+}
+header .menu-popUp button:hover svg, header .menu-popUp button:focus svg {
+  fill: #2196F3;
+}
+header .menu-popUp .menu-modal {
+  position: absolute;
+  font-weight: 500;
+  height: 100%;
+}
+header .menu-popUp .menu-modal__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 50px 0 0 40px;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+header .menu-popUp .menu-modal__nav li:hover a, header .menu-popUp .menu-modal__nav li:focus a {
+  color: #2196F3;
+}
+header .menu-popUp .menu-modal__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 300px 0 0 40px;
+}
+header .menu-popUp .menu-modal__contact a {
+  font-size: 24px;
+  line-height: 28px;
+  color: #757575;
+}
+header .menu-popUp .menu-modal__contact li:nth-child(1) a {
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+header .menu-popUp .menu-modal__social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 65px 0 47px 40px;
+}
+header .menu-popUp .menu-modal__social-media li {
+  padding: 0 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+header .menu-popUp .menu-modal__social-media li a {
+  font-size: 18px;
+  line-height: 22px;
+  color: #2196F3;
+}
+header .menu-popUp .menu-modal__social-media li:nth-child(1) {
+  padding-left: 0;
+  border-left: none;
+}
+header .popUp-hidden {
+  display: none;
 }
 header .links li {
   font-weight: 500;

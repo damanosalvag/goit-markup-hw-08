@@ -29,7 +29,7 @@
             </nav>
             <ul class="nav-contact links nav">
                 <li>
-                    <a class="menu-burguer">
+                    <a class="menu-burguer" id="open-menu-btn">
                         <svg class="menu-burguer__icon" width="24" height="16">
                             <use href="./images/svg/icons.svg#menu-burguer"></use>
                         </svg>
@@ -52,6 +52,31 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <!--Lista de menu burger-->
+        <div class="menu-popUp popUp-hidden" id="menu-modal">
+            <div class="menu-modal">
+                <ul class="menu-modal__nav">
+                    <li><a href="./index.html">Estudio</a></li>
+                    <li><a href="./portafolio.html">Portafolio</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+                <ul class="menu-modal__contact">
+                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+                <ul class="menu-modal__social-media">
+                    <li><a>Instagram</a></li>
+                    <li><a>Twitter</a></li>
+                    <li><a>Facebook</a></li>
+                    <li><a>Linkedin</a></li>
+                </ul>
+            </div>
+            <button type="button" id="menu-burger-btn">
+                <svg width="18.67" height="18.67">
+                    <use href="./images/svg/icons.svg#menu-modal-equis"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -294,5 +319,6 @@
                 </div>
             </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
