@@ -608,12 +608,13 @@ header .menu-popUp .menu-modal {
   position: absolute;
   font-weight: 500;
   height: 100%;
+  width: 100%;
 }
 header .menu-popUp .menu-modal__nav {
   display: flex;
   flex-direction: column;
   gap: 36px;
-  padding: 50px 0 0 35px;
+  padding: 50px 0 0 5%;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
@@ -625,7 +626,7 @@ header .menu-popUp .menu-modal__contact {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 300px 0 0 35px;
+  padding: 300px 0 0 5%;
 }
 header .menu-popUp .menu-modal__contact a {
   font-size: 24px;
@@ -641,11 +642,11 @@ header .menu-popUp .menu-modal__contact li:nth-child(1) a {
 header .menu-popUp .menu-modal__social-media {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 65px 0 47px 35px;
+  justify-content: flex-start;
+  padding: 65px 0 47px 5%;
 }
 header .menu-popUp .menu-modal__social-media li {
-  padding: 0 9px;
+  padding: 0 7px;
   border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 header .menu-popUp .menu-modal__social-media li a {
